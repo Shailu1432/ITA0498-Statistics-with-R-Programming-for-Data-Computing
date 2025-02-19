@@ -1,0 +1,11 @@
+vector1 <- seq(1, 9)
+vector2 <- seq(10, 18)
+values <- c(vector1, vector2)
+dimensions <- c(3, 3, 2)
+my_array <- array(values, dim = dimensions)
+dimnames(my_array) <- list(
+  Rows = c("Row1", "Row2", "Row3"),
+  Columns = c("Col1", "Col2", "Col3"),
+  Tables = c("Table1", "Table2")
+)
+print(my_array)
