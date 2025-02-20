@@ -1,0 +1,6 @@
+ data("airquality")
+is_dataframe <- is.data.frame(airquality)
+print(paste("Is airquality a data frame?", is_dataframe))
+airquality_sorted <- airquality[order(airquality$Ozone, airquality$Solar.R, na.last = TRUE), ]
+airquality_modified <- subset(airquality_sorted, select = -c(Solar.R, Wind))
+print(head(airquality_modified))
