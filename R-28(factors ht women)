@@ -1,0 +1,6 @@
+data("women")
+print("Women dataset:")
+print(head(women))
+women$Height_Factor <- factor(women$height)
+print("Dataset with Height as a Factor:")
+print(head(women))
