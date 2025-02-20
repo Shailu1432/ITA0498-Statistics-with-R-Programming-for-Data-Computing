@@ -1,0 +1,8 @@
+set.seed(123)
+random_letters <- sample(LETTERS, 10, replace = TRUE)
+letter_factor <- factor(random_letters)
+print("Factor levels:")
+print(levels(letter_factor))
+five_levels <- levels(letter_factor)[1:5]
+print("First five levels of the factor:")
+print(five_levels)
